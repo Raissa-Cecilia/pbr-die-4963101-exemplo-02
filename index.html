@@ -9,14 +9,14 @@
             font-size: 16px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .container{
+        .cabecalho{
             border: 1px solid #e7c7c7;
-            height: 35rem;
-            box-shadow: .5rem .5rem .3rem .01rem #e7c7c7;
+            height: 5rem;
+            /*box-shadow: .5rem .5rem .3rem .01rem #e7c7c7;*/
             display: flex;
             flex-wrap: wrap;
             justify-content: start;
-            align-content: center;
+            align-content: start;
             /* align-content: center;*/
            /*justify-content: space-evenly;*/
         }
@@ -25,9 +25,9 @@
             color: white;
             font-weight: bold;
             padding: 1rem;
-            margin: .5rem;
+            margin: .1rem;
             width: 5rem;
-            height: 5rem;
+            height: 3rem;
             border-radius: .5rem;
         }
         .logo{
@@ -39,13 +39,27 @@
         .menu-sandwch{
             flex-grow: 1;
         }
+        .menu-lateral{
+            border: 1px solid yellow;
+            width: 15rem;
+        }
+        .parte-pricipal{
+            border: 1px dashed blue;
+        }
+        .container{
+            display: flex;
+        }
     </style>
 </head>
 <body>
+    <div class="cabecalho">
+        <div class="item logo">Logo</div>
+        <div class="item titulo">Título</div>
+        <div class="item menu-sandwch">Menu</div>
+    </div>
     <div class="container">
-        <div class="item logo">Item 01</div>
-        <div class="item titulo">Item 02</div>
-        <div class="item menu-sandwch">Item 03</div>
+        <nav class="menu-lateral">Menu Lateral</nav>
+        <main class="parte-pricipal">Parte Principal</main>
     </div>
 </body>
 </html>
